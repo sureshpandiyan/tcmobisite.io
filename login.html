@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/tc_login.js"></script>
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/tc_login.css" />
+</head>
+
+<body class="loginPort">
+<div id="loginbox">
+  <form id="loginform" class="form-vertical" action="home.html">
+    <div class="control-group normal_text">
+      <h3><img src="images/tc-logo.png" alt="Logo" /></h3>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+        <div class="input-group main_input_box">
+          <div class="input-group-addon add-on"><i class="fa fa-user"></i></div>
+          <input type="text" placeholder="Username" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+        <div class="input-group main_input_box">
+          <div class="input-group-addon add-on"><i class="fa fa-lock"></i></div>
+          <input type="password" placeholder="Password" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="form-actions"> <span class="pull-left"> <a type="submit" href="home.html" class="btn btn_Green">Login</a> </span> <span class="pull-left loginLink"> <a type="submit" id="to-recover" >Forgot password?</a> | <a type="submit" href="index.html" >Change Passoword</a> </span> </div>
+  </form>
+  <form id="recoverform" action="#" class="form-vertical">
+    <p class="normal_text">Enter your e-mail address below and we will send you instructions how to recover a password.</p>
+    <div class="controls">
+      <div class="input-group main_input_box"> <div class="input-group-addon add-on bg_lo"><i class="fa fa-envelope"></i></div>
+        <input type="text" placeholder="E-mail address" class="form-control" />
+      </div>
+    </div>
+    <div class="form-actions"> <span class="pull-left"><a href="#" class="flip-link btn bakTologin" id="to-login">&laquo; Back to login</a></span> <span class="pull-right"><a class="btn btn_Green">Submit</a></span> </div>
+  </form>
+  <footer>
+    <div class="footerContent"> © 2014 Trans<span class="fLogoTextColor">Centra</span>, Inc. </div>
+  </footer>
+</div>
+</body>
+</html>

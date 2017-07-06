@@ -1,0 +1,309 @@
+@charset "utf-8";
+/* CSS Document */
+*, *::before, *::after {
+	outline: none !important;
+	-moz-outline: none !important;
+}
+html, body {
+	height: 100%
+}
+body {
+	background-color: #f1f1f1;
+	overflow-x: hidden;
+	font-family: sans-serif;
+	font-size: 12px;
+	color: #666;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #666;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	color: #28b779;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input, .label, .dropdown-menu, .btn, .well, .progress, .table-bordered, .btn-group > .btn:first-child, .btn-group > .btn:last-child, .btn-group > .btn:last-child, .btn-group > .dropdown-toggle, .alert {
+	border-radius: 0px;
+}
+.btn, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	box-shadow: none;
+}
+.label-important {
+	background-color: #f74d4d;
+	color: #fff;
+}
+.header-navbar.navbar-semi-dark {
+	background: #1f262d;
+}
+.header-navbar.navbar-shadow {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+.header-navbar {
+	padding: 0px;
+	/*position: relative;*/
+	min-height: 4rem;
+	margin: 0;
+	border: 0;
+	transition: 300ms ease all;
+}
+.header-navbar.navbar-semi-dark .navbar-header {
+	background: #1f262d;
+}
+.header-navbar .navbar-header {
+	height: 100%;
+	width: 240px;
+	min-height: 4rem;
+	float: left;
+	position: relative;
+	/*padding: 0rem 1rem;*/
+	transition: 300ms ease all;
+}
+.nav {
+	border-radius: 0.25rem;
+}
+.header-navbar.navbar-semi-dark .navbar-nav li {
+	line-height: 1;
+}
+.header-navbar .nav-item + .nav-item {
+	margin-left: 0rem;
+}
+.header-navbar.navbar-semi-dark .navbar-nav .nav-link {
+	color: #55595c;
+}
+.nav .nav-item .nav-link {
+	display: block;
+	height: 100%;
+}
+.header-navbar .navbar-header .navbar-brand {
+	padding: 15px 6px;
+}
+#navbar-mobile > ul > li > a {
+	color: #c9c9c9;
+}
+#navbar-mobile > ul > li > a i {
+	font-size: 16px;
+}
+.topNavCalc {
+	width: 99px;
+	margin: 0 5px;
+	min-height: 30px;
+}
+.topNavCalc input.form-control {
+	padding: 0 2px 0 3px;
+	height: 18px;
+	margin-top: 4px;
+	width: 75px;
+	border-radius: 0;
+}
+.topNavCalc .input-group-addon {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+	font-size: 16px;
+	color: #ff7e00;
+}
+/* Search input */
+#search {
+	padding: 10px;
+	text-align: center;
+}
+#search input[type=text] {
+	padding: 4px 10px 5px;
+	border: 0;
+	width: 129px;
+	background-color: #171b25;
+	height: 25px;
+	color: #f1f1f1;
+}
+#search button {
+	border: 0;
+    margin-left: -3px;
+    height: 25px;
+    background-color: #4bc0c0;
+    font-size: 16px;
+    padding: 0 5px;
+}
+#search button i {
+	opacity: 0.8;
+	color: #fff;
+}
+#search button:hover i, #search button:active i {
+	opacity: 1;
+}
+/* Main Menu Starts Here */
+div#mainMenuWrapper {
+	background-color: #2e363f;
+	width: 240px;
+	height: 100%;
+	position: absolute;
+	left: -240px;
+}
+#tcVericalMenu {
+	background-color: #2e363f;
+	padding-bottom: 10px;
+}
+#tcVericalMenu ul {
+	margin: 0;
+	padding: 0;
+}
+#tcVericalMenu a {
+	padding: 10px 5px;
+	display: block;
+	border-bottom: 1px solid #1f262d;
+	position: relative;
+	color: #939da8;
+	font-size: 14px;
+}
+#tcVericalMenu a:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	background-color: #37414b;
+	left: 0;
+	bottom: 0px;
+}
+#tcVericalMenu ul > li > a > i {
+	margin-right: 12px;
+	float: left;
+	position: relative;
+	top: 3px;
+	font-size: 16px;
+}
+#tcVericalMenu ul > li > a:hover {
+	background-color: #92b700;
+	color: #ffffff;
+}
+#tcVericalMenu ul > li > a.active {
+	background-color: #92b700;
+	color: #ffffff;
+}
+.caret {
+	border-top: 6px dashed;
+	border-top: 6px solid \9;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+}
+
+/* Main Menu Ends Here */
+a.menuNavigator {
+    display: inline-block;
+    width: 20px;
+    height: 28px;
+    padding: 1px;
+    line-height: 0px;
+    vertical-align: middle;
+    transition: 0.5s;
+    position: relative;
+}
+a.menuNavigator .menuStick {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+	top: 0;
+	transition: 0.5s;
+}
+span.menuStick.menuStick1 {
+    margin: 6px 0;
+}
+span.menuStick.menuStick2 {
+    margin: 12px 0;
+}
+span.menuStick.menuStick3 {
+    margin: 18px 0;
+}
+.menuExpand span.menuStick1 {
+	display: none;
+}
+.menuExpand span.menuStick2 {
+    transform: rotate(50deg);
+    margin: 0 !important;
+    top: 45%;
+}
+.menuExpand span.menuStick.menuStick3 {
+    transform: rotate(-50deg);
+    margin: 0;
+    top: 45%;
+}
+.slectedMenu {
+    background-color: #1aa3ff;
+    padding: 0 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.content-wrapper {
+    position: relative;
+    min-height: 300px;
+    margin-left: 0px;
+	overflow: auto;
+}
+/* panel Style */
+.panel {
+    border-radius: 0;
+    border: 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.panel-default > .panel-heading {
+	background-color: #fff;
+}
+.panel-titleIcon {
+	color: #3c3c3c;
+    font-size: 18px;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    border-right: 1px solid #c1c1c1;
+    padding-right: 5px;
+}
+/*Media Starts Here */
+@media (max-width: 768px) {
+body {
+	padding-top: 122px;
+}
+.header-navbar .navbar-header {
+	float: none;
+	width: 100%;
+	text-align: center;
+}
+.header-navbar .navbar-header .navbar-brand {
+	float: none;
+	display: inline-block;
+}
+.navbar-container {
+	text-align: center;
+}
+#navbar-mobile .navbar-nav {
+	float: none;
+	display: inline-block;
+	margin-bottom: -5px;
+	border-radius: 5px 5px 0 0;
+	border: 1px solid #151a1f;
+	border-bottom: 0;
+}
+#navbar-mobile .navbar-nav > li {
+	float: left;
+}
+.navbar-nav > li > a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#navbar-mobile > ul > li {
+	border-right: 1px solid #151a1f;
+	position: relative;
+}
+#navbar-mobile > ul > li:not(:last-child):after {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	background-color: #37414b;
+	top: 0;
+	right: 0;
+}
+}
